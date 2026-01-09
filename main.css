@@ -39,6 +39,7 @@
 	--white: white;
 	--dark-green: #00210b;
 	--light-green: #c9da30;
+	--green: #1a3723;
 	--radius-sm: 4px;
 	--radius-md: 8px;
 	--radius-lg: 40px;
@@ -76,14 +77,15 @@ h1 {
 }
 h2 {
 	font-weight: 700;
-	font-size: 5rem;
+	font-size: 4rem;
 	line-height: 132%;
 	color: var(--white);
 }
 h3 {
+	font-size: 2rem;
 	font-weight: 600;
-	font-size: var(--font-size-h3);
 	line-height: 132%;
+	color: var(--white);
 }
 h4 {
 	font-weight: 600;
@@ -97,6 +99,7 @@ a {
 }
 p {
 	color: var(--white);
+	font-size: 1.2rem;
 }
 
 .link {
@@ -390,7 +393,7 @@ p {
 }
 @media (max-width: 450px) {
 	.hero {
-		padding: 3rem 0 10rem 0;
+		padding: 3rem 0 3rem 0;
 	}
 	.hero .left {
 		padding: 2rem;
@@ -448,14 +451,40 @@ p {
 .sec .subtitle {
 	color: var(--light-green);
 	font-weight: 500;
-	font-size: 2rem;
+	font-size: 1.8rem;
 	text-transform: uppercase;
 }
 .sec .text {
 	color: var(--white);
-	font-size: 1.4rem;
+	font-size: 1.2rem;
 	opacity: 0.8;
 	letter-spacing: 1px;
+}
+.more {
+	color: var(--light-green);
+	font-weight: 400;
+	font-size: 1.2rem;
+}
+.more:hover {
+	cursor: pointer;
+	opacity: 0.8;
+}
+.hidden {
+	display: none;
+}
+.product {
+	background-color: var(--green);
+	border-radius: 2rem;
+	padding: 2rem;
+}
+.product p {
+	font-size: 1.2rem;
+	opacity: 0.8;
+}
+.product .subtitle {
+	color: var(--light-green);
+	font-size: 1.4rem;
+	opacity: 1;
 }
 
 /* footer */
